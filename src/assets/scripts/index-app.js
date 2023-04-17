@@ -43,7 +43,7 @@ const pinData = {
   }
 };
 
-window.addEventListener('click', (evt) => {
+document.body.addEventListener('click', (evt) => {
   const target = evt.target.closest('[data-link]');
   if (!target) return;
   const popup = document.querySelector('.popup');
@@ -92,7 +92,7 @@ if (Array.from(document.documentElement.classList).join('').match(/mobile|tablet
   // alert('PAD');
 }
 
-window.addEventListener('click', (evt) => {
+document.body.addEventListener('click', (evt) => {
   const target = evt.target.closest('[data-close-popup]');
   if (!target) return;
   const popup = document.querySelector('.popup');

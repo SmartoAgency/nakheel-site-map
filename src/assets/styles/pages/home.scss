@@ -7,6 +7,7 @@ body {
   height: 100vh;
   position: fixed !important;
   overflow: hidden;
+  z-index: 5;
   // background-color: green;
   svg {
     width: 100%;
@@ -15,6 +16,9 @@ body {
 
   @include to(1024px){
    
+  }
+  image {
+    pointer-events: none;
   }
 }
 
@@ -49,7 +53,7 @@ body {
   position: fixed;
   left: 60px;
   top: 60px;
-  z-index: 2;
+  z-index: 6;
   @include to(1024px){
     left: 15px;
     top: 15px;
@@ -78,7 +82,7 @@ body {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  
+  z-index: 40;
 
   &.active {
     pointer-events: all;
@@ -162,9 +166,11 @@ body {
       align-items: center;
       width: 100%;
       width: calc(196px + 40px);
-      padding: 20px 20px 40px 20px;
+      padding: 20px 20px 20px 20px;
       top: 50% !important;
-    
+    &__text {
+      padding: 0;
+    }
   }
 }
 
