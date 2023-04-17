@@ -28,6 +28,18 @@ const pinData = {
     text: 'Sobha One spreads its tapestry over five interlinked towers. Rising from 30 stories tall and hitting a crescendo of 65 stories, it’s one note after another that sings in chorus with the skyline.',
     img: './assets/images/one/img.jpg',
     link: '',
+  },
+  'sobha_reserve': {
+    title: 'Sobha Reserve',
+    text: 'An exquisite abode with a niche set of exquisite villas situated in the heart of an idyllic green luxury gated community that encompasses bouldering walls, exotic flower-patterned clusters, and tree-lined walkways. The size of each villa starts from 4900 sq. ft.',
+    img: './assets/images/reserve/img.jpg',
+    link: '',
+  },
+  'sobha_hartland': {
+    title: 'Sobha Hartland',
+    text: 'Community living that represents a whole new definition of luxury. Experience inspired living in an 8 million sq. ft. waterfront community of luxurious apartments, villas, and townhouses in Sobha Hartland Dubai.',
+    img: './assets/images/hartland/hartland-1.webp',
+    link: '',
   }
 };
 
