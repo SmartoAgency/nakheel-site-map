@@ -156,8 +156,7 @@ body {
   }
 }
 
-.mobile.portrait,
-.tablet.portrait {
+.mobile.portrait {
   .popup {
       left: 50% !important;
       transform: translateX(-50%) translateY(-50%);
@@ -196,6 +195,11 @@ a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: .25s ease-out;
+  &:hover {
+    background-color: #E1B67A;
+    color: #1A191A;
+  }
 
 }
 
@@ -249,4 +253,15 @@ path.leaflet-overlay-pane-small {
     stroke-width: 2;
     stroke: rgba(255, 175, 64, 0.75);
   }
+}
+
+.minimap {
+   
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  width:120px;
+  height:80px;
+  border:3px solid #000;
+  background:#fff;
 }
