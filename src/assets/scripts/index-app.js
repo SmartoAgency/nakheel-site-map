@@ -18,8 +18,8 @@ const pinData = {
     link: '',
   },
   'sobha_verde': {
-    title: 'Sobha Verde',
-    text: 'Sobha Verde at Jumeirah Lake Towers, Dubai presents luxury 1, 2 & 3 bedroom apartments developed by Sobha Group. The developer is always known for new designs, relaxing aesthetics and unparalleled architecture beyond your imagination.',
+    title: 'Verde by Sobha',
+    text: 'Verde by Sobha at Jumeirah Lake Towers, Dubai presents luxury 1, 2 & 3 bedroom apartments developed by Sobha Group. The developer is always known for new designs, relaxing aesthetics and unparalleled architecture beyond your imagination.',
     img: './assets/images/verde/img.jpg',
     link: '',
   }, 
