@@ -11,27 +11,33 @@ window.addEventListener('resize', () => {
 
 
 const pinData = {
+  'sobha_s': {
+    title: 'The S',
+    text: `The city’s most prized real estate adorns Sheikh Zayed Road, the power corridor of Dubai. Naturally, you belong here. Being so central also has its visual perks, with every apartment at The S oriented to offer stunning views whichever way you look.`,
+    img: './assets/images/s/img.jpg',
+    link: '',
+  },
   'sobha_seaheaven': {
     title: 'Sobha SeaHaven',
-    text: 'At Sobha SeaHaven, you can experience the euphoria of a unique oceanfront lifestyle. With exclusive amenities and lush landscaping, this is a secluded place of luxury, peace and beauty. Sobha SeaHaven is located in the center of the sea gate, making it easy to anchor and explore the most exclusive destinations.',
+    text: `THE OCEAN's YOUR PLAYGROUND. <br><br> Located in the heart of Dubai, take in the gorgeous views of the city’s beloved landmarks- iconic Palm Jumeirah, stunning Dubai Harbour and Marina skyline, prominent Ain Dubai and the regal Burj Al Arab. Sobha SeaHaven is an exciting sea-facing destination equidistant from the two international airports and a stone’s throw away from the most cherished landmarks of Dubai.`,
     img: './assets/images/seaheaven/img.jpg',
     link: '',
   },
   'sobha_verde': {
     title: 'Verde by Sobha',
-    text: 'Verde by Sobha at Jumeirah Lake Towers, Dubai presents luxury 1, 2 & 3 bedroom apartments developed by Sobha Group. The developer is always known for new designs, relaxing aesthetics and unparalleled architecture beyond your imagination.',
+    text: `Embrace a new kind of living in one of Dubai's most coveted districts - JLT, surrounded by tranquil lakes, thriving residential complexes, buzzing high streets and more. Verde by Sobha is one of the tallest residential towers offering picturesque views of the lush green meadows and emerald golf course. The uber-luxury homes are designed to suit the discerning tastes of the globe trotters with world-class amenities.`,
     img: './assets/images/verde/img.jpg',
     link: '',
   }, 
   'sobha_one': {
     title: 'Sobha One',
-    text: 'Sobha One spreads its tapestry over five interlinked towers. Rising from 30 stories tall and hitting a crescendo of 65 stories, it’s one note after another that sings in chorus with the skyline.',
+    text: 'Sobha One spreads its tapestry over five interlinked towers. Rising from 30 stories tall and hitting a crescendo of 65 stories, it’s one note after another that sings in chorus with the skyline. Rise high above and look at the stars. Soak in the stunning views of the city. Catch the sun rays when they rise and set. Do it all from the magnificent panoramic sky terrace in each tower.',
     img: './assets/images/one/img.jpg',
     link: '',
   },
   'sobha_reserve': {
     title: 'Sobha Reserve',
-    text: 'An exquisite abode with a niche set of exquisite villas situated in the heart of an idyllic green luxury gated community that encompasses bouldering walls, exotic flower-patterned clusters, and tree-lined walkways. The size of each villa starts from 4900 sq. ft.',
+    text: 'An exquisite abode with a niche set of exquisite villas situated in the heart of an idyllic green luxury gated community that encompasses bouldering walls, exotic flower-patterned clusters, and tree-lined walkways.',
     img: './assets/images/reserve/img.jpg',
     link: '',
   },
@@ -51,7 +57,7 @@ document.body.addEventListener('click', (evt) => {
   const data = pinData[target.dataset.id];
 
   popup.querySelector('.popup__text div').textContent = data.title;
-  popup.querySelector('.popup__text p').textContent = data.text;
+  popup.querySelector('.popup__text p').innerHTML = data.text;
   popup.querySelector('.popup__img').src = data.img;
   popup.querySelector('a').href = target.dataset.link;
 
