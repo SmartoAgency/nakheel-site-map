@@ -44,7 +44,7 @@ const pinData = {
   'sobha_hartland': {
     title: 'Sobha Hartland',
     text: 'Community living that represents a whole new definition of luxury. Experience inspired living in an 8 million sq. ft. waterfront community of luxurious apartments, villas, and townhouses in Sobha Hartland Dubai.',
-    img: './assets/images/hartland/hartland-1.webp',
+    img: './assets/images/hartland/hartland-1.jpg',
     link: '',
   }
 };
