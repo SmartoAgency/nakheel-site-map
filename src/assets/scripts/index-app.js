@@ -11,6 +11,11 @@ window.addEventListener('resize', () => {
 
 
 const pinData = {
+  'sobha_hartland2': {
+    title: 'Sobha Hartland 2',
+    text: 'Sobha Hartland 2 is a green community enclosing mansions, 6-bedroom villas and 5-bedroom villas within a forest sanctuary of large lagoons. Nestled in a stunning development of 8 million Sq. Ft. with draped waterfronts, blue lagoons, and river, it embraces nature, water, open spaces, and lush landscaping. Discover apartments with views of vibrant Downtown Dubai.',
+    img: './assets/images/sobha_hartland2.jpg',
+  },
   'sobha_s': {
     title: 'The S',
     text: `The city’s most prized real estate adorns Sheikh Zayed Road, the power corridor of Dubai. Naturally, you belong here. Being so central also has its visual perks, with every apartment at The S oriented to offer stunning views whichever way you look.`,

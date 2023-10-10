@@ -42,6 +42,7 @@ const buffer = require('vinyl-buffer');
 const glob = require("glob")
 const merge = require('merge-stream');
 const path = require('path');
+const htmlmin = require('gulp-htmlmin');
 
 
 
@@ -174,7 +175,8 @@ function clean() {
 // pug
 function templates() {
 	return gulp.src(paths.templates.pages)
-	.pipe(pug({ pretty: true }))
+	.pipe(pug({ pretty: false }))
+	.pipe(htmlmin({ collapseWhitespace: true }))
 	.pipe(gulp.dest(paths.root));
 }
 
@@ -348,7 +350,7 @@ const pathsProd = {
 	},
 	style: {
 		src: './dist/assets/styles/*.css',
-		dest: './prod/assets/styles',
+		dest: './dist/assets/styles',
 	},
 	js: {
 		src: './dist/assets/scripts/*.js',

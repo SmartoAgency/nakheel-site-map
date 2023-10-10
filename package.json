@@ -88,6 +88,7 @@
     "cleave.js": "^1.6.0",
     "current-device": "^0.10.2",
     "gsap": "^3.5.1",
+    "gulp-htmlmin": "^5.0.1",
     "i18next": "^19.8.4",
     "intl-tel-input": "^17.0.12",
     "jquery": "^3.6.4",
