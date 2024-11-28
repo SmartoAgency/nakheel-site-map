@@ -1,3 +1,29 @@
+@mixin scrollbar-h {
+  &::-webkit-scrollbar {
+      height: 8px;
+      cursor: pointer;
+      background-color: #1A2941;
+  }
+      
+  &::-webkit-scrollbar-track {
+      // -webkit-box-shadow: inset 0 0 6px #e2e3e4;
+  }
+      
+  &::-webkit-scrollbar-thumb {
+      background:   white;
+      border-radius: 4px;
+      // -webkit-box-shadow: inset 0 0 6px #e2e3e4;
+      cursor: pointer;
+  }
+  &::-webkit-scrollbar-thumb:active {
+      background-color: white;
+      cursor: pointer;
+  }
+}
+.scrollbar-h {
+@include scrollbar-h;
+}
+
 body {
   overflow: hidden;
 }
@@ -8,6 +34,7 @@ body {
   position: fixed !important;
   overflow: hidden;
   z-index: 5;
+  @include scrollbar-h;
   // background-color: green;
   svg {
     width: 100%;
@@ -42,7 +69,7 @@ body {
     svg {
       height: 100%;
       max-width: none;
-      width: calc(var(--vh, 1vh) * 100 / 9 * 16);
+      width: calc(var(--vh, 1vh) * 100 / 1009 * 1920);
     }
   }
 }
@@ -51,9 +78,11 @@ body {
 
 .logo {
   position: fixed;
-  left: 60px;
-  top: 60px;
+  left: 25px;
+  top: 25px;
   z-index: 6;
+  width: 125px;
+  height: auto;
   @include to(1024px){
     left: 15px;
     top: 15px;
@@ -76,7 +105,7 @@ body {
   background: #FFFFFF;
   backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 8px 1px 8px 8px;
+  border-radius: 8px;
   transform: translateX(-50%) translateY(-100%);
 
   pointer-events: none;
@@ -156,6 +185,13 @@ body {
     }
   }
 }
+.mobile {
+  .popup {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
 
 .mobile.portrait {
   .popup {
@@ -166,8 +202,14 @@ body {
       align-items: center;
       width: 100%;
       width: calc(196px + 40px);
+      width: 90vw;
       padding: 20px 20px 20px 20px;
       top: 50% !important;
+      &__img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
     &__text {
       padding: 0;
     }
@@ -265,4 +307,21 @@ path.leaflet-overlay-pane-small {
   height:80px;
   border:3px solid #000;
   background:#fff;
+}
+
+
+.map-wrapper.landscape {
+  overflow-y: auto;
+  svg {
+    width: 100vw;
+    height: calc(100vw / 1920 * 1009);
+  }
+}
+
+.map-wrapper.portrait {
+  overflow-x: auto;
+  svg {
+    height: 100vh;
+    width: calc(100vh / 1009 * 1920);
+  }
 }
