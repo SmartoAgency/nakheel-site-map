@@ -68,7 +68,7 @@ const pinData = {
     title: 'Sobha Elwood',
     text: 'A residential haven in Dubailand, featuring an exquisite selection of 4, 5, and 6-bedroom villas surrounded by lush greenery. Combining luxury with nature, this community offers an amphitheater, botanical gardens, and serene outdoor spaces, making it a sanctuary of tranquility and elegance. Designed for families seeking a verdant lifestyle, Sobha Elwood redefines upscale living with its unique blend of adventure and opulence',
     img: './assets/images/elwood/elwood.webp',
-    link: 'https://www.sobharealty.com/our-communities/sobha-elwood/',
+    link: 'https://sobhaelwoodapp.com/',
   },
   'sobha_siniya_island' : {
     title: 'Sobha Siniya Island',
