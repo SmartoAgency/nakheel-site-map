@@ -22,6 +22,12 @@ const pinData = {
     img: './assets/images/s/img.jpg',
     link: '',
   },
+  'sobha_s_hartland1': {
+    title: 'The S at SOBHA Hartland II',
+    text: `Inherits the timeless design language of Sobha’s most iconic signature tower. This isn’t a mere resemblance, it’s an evolution. As the most distinguished tower within Sobha Hartland II, The S stands as a defining statement of prestige and architectural vision. Just minutes away from Dubai’s key destinations, yet worlds away in stillness. The S is where grace and access find their quiet intersection.`,
+    img: './assets/images/sobha_s_hartland1/img.jpg',
+    link: '',
+  },
   'sobha_seaheaven': {
     title: 'Sobha SeaHaven',
     text: `THE OCEAN's YOUR PLAYGROUND. <br><br> Located in the heart of Dubai, take in the gorgeous views of the city’s beloved landmarks- iconic Palm Jumeirah, stunning Dubai Harbour and Marina skyline, prominent Ain Dubai and the regal Burj Al Arab. Sobha SeaHaven is an exciting sea-facing destination equidistant from the two international airports and a stone’s throw away from the most cherished landmarks of Dubai.`,
@@ -156,6 +162,9 @@ function setMapOverflow() {
     svg.style.width = '100vw';
     map.classList.add('landscape');
     map.classList.remove('portrait');
+    map.scrollTo({
+      top: 1000,
+    })
   } else {
     svg.style.height = '100vh';
     svg.style.width = 'auto';
